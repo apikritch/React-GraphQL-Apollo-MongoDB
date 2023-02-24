@@ -1,0 +1,85 @@
+.App {
+  padding: 1rem;
+  @media (min-width: 640px) {
+  }
+  @media (min-width: 768px) {
+    padding: 2rem 3rem;
+  }
+  @media (min-width: 1024px) {
+    padding: 2rem 4rem;
+  }
+  @media (min-width: 1280px) {
+    padding: 2rem 5rem;
+  }
+  @media (min-width: 1536px) {
+    padding: 2rem 6rem;
+  }
+}
+
+.products-button-container {
+  width: 125px;
+  height: 45px;
+  position: relative;
+  overflow: hidden;
+
+  .products-button {
+    position: absolute;
+    background-color: #f97316;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    left: 0%;
+    transition: left 0.25s linear;
+  }
+
+  .products-button-background.products-button {
+    left: 100%;
+    transition: left 0.25s linear;
+  }
+
+  .products-button-text {
+    position: relative;
+    z-index: 100;
+    color: unset;
+    transition: color 0.25s linear;
+  }
+
+  .products-text.products-button-text {
+    color: #ffffff;
+    transition: color 0.25s linear;
+  }
+}
+
+.categories-button-container {
+  width: 125px;
+  height: 45px;
+  position: relative;
+  overflow: hidden;
+
+  .categories-button {
+    position: absolute;
+    background-color: #0ea5e9;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    left: 0%;
+    transition: left 0.25s linear;
+  }
+
+  .categories-button-background.categories-button {
+    left: -100%;
+    transition: left 0.25s linear;
+  }
+
+  .categories-text {
+    position: relative;
+    z-index: 100;
+    color: unset;
+    transition: color 0.25s linear;
+  }
+
+  .categories-text.categories-button-text {
+    color: #ffffff;
+    transition: color 0.25s linear;
+  }
+}
