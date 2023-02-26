@@ -24,7 +24,7 @@ const server = new ApolloServer({
 });
 
 const { url } = await startStandaloneServer(server, {
-  listen: { port: 4000, host: "localhost" },
+  listen: { port: process.env.PORT, host: process.env.HOST },
   context: async ({ req }) => {
     // const user = Authentication(req);
     // return { user: user };
@@ -52,21 +52,3 @@ console.log(`🚀  Server ready at: ${url}`);
 //     });
 // };
 // startServer();
-
-const test = (item) => {
-  let countedNumber = [];
-  let totalCount = 0;
-
-  for (let i = 0; i < item.length; i++) {
-    countedNumber.push(item[i]);
-    countedNumber.sort();
-
-    if (countedNumber.length === countedNumber[countedNumber.length - 1]) {
-      totalCount += 1;
-    }
-  }
-
-  return totalCount;
-};
-
-console.log(test([4, 1, 2, 3, 5]));
