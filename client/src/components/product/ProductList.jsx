@@ -101,7 +101,7 @@ const ProductList = (props) => {
                   </h5>
                 )}
                 <h4 className={`${item.onSale && "text-red-500 "}`}>
-                  $ {item.price}
+                  $ {item.price.toFixed(2)}
                 </h4>
               </div>
               {item.category && (

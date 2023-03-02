@@ -197,7 +197,7 @@ const Navbar = (props) => {
           <React.Fragment>
             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
               <Avatar className="!w-9 !h-9 md:!w-[45px] md:!h-[45px]">
-                AD
+                {user.email.charAt(0).toUpperCase()}
               </Avatar>
             </IconButton>
             <Menu

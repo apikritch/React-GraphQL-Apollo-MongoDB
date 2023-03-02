@@ -37,7 +37,7 @@ const Product = () => {
             </div>
             <hr className="mt-3 mb-6 sm:mb-0" />
             <div className="h-full flex flex-col sm:justify-center md:gap-1 lg:gap-3 xl:gap-5 2xl:gap-7">
-              <h2 className="mb-3">$ {product.price}</h2>
+              <h2 className="mb-3">$ {product.price.toFixed(2)}</h2>
               <p className="mb-3">
                 <strong>Category:</strong>{" "}
                 {product.category && product.category.name}
