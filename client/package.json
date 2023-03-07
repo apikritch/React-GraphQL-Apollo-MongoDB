@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "%PUBLIC_URL%",
   "dependencies": {
     "@apollo/client": "^3.7.4",
     "@emotion/react": "^11.10.5",
