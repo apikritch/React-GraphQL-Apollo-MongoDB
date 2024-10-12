@@ -1,11 +1,4 @@
-docker-compose.yml
-
 client/build
 client/node_modules
-client/Dockerfile
-client/.env
-client/default.conf
 
 server/node_modules
-server/.env
-server/Dockerfile

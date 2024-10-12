@@ -15,7 +15,7 @@ import "@fontsource/roboto/700.css";
 import "./index.css";
 
 const client = new ApolloClient({
-  uri: "http://localhost:4000/",
+  uri: "https://apikritch.com/server/1",
   cache: new InMemoryCache(),
 });
 
@@ -23,7 +23,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter basename="/">
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ApolloProvider client={client}>
           <App />
         </ApolloProvider>
